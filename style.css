@@ -94,6 +94,7 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
     color: #e08679;
     font-weight: bold;
     background-color: #fcebcd;
+    padding: 10px 20px;
     /*debugging*/
     /* border-color: blue; 
     border-style: solid; */
