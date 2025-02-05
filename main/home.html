@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Hotel</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Create a Booking</h2>
+            <form action="checkout.html" method="POST">
+                <label for="checkin-date">Check-in Date:</label>
+                <input type="date" id="checkin-date" name="checkin_date" required>
+                <label for="checkout-date">Check-out Date:</label>
+                <input type="date" id="checkout-date" name="checkout_date" required>
+                <label for="room-type">Room Type:</label>
+                <select id="room-type" name="room_type" required>
+                    <option value="single">Single Room</option>
+                    <option value="double">Double Room</option>
+                    <option value="suite">Suite</option>
+                </select>
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 ITPROG Hotel. All rights reserved.</p>
+    </footer>
+</body>
+</html>
