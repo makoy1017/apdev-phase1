@@ -1,26 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: rgb(252, 119, 52);
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .container {
+            margin: 20px;
+        }
+        .section {
+            background-color: white;
+            border: 1px solid rgb(252, 119, 52);
+            margin: 10px 0;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-    <header>
+    <div class="header">
         <h1>Login</h1>
-    </header>
+    </div>
     <main>
+        <div class="container">
         <form action="home.html" method="POST">
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
             <button type="submit">Login</button>
+        </div>
         </form>
     </main>
-    <footer>
-        <p>&copy; 2023 ITPROG Hotel. All rights reserved.</p>
-    </footer>
 </body>
 </html>
